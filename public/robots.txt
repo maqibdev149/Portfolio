@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: 
+
+Sitemap: https://aqib-portfolio.com/sitemap.xml
