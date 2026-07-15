@@ -15,6 +15,16 @@ const About = lazy(() =>
 const Skills = lazy(() =>
   import("@/components/sections/Skills").then((m) => ({ default: m.Skills })),
 );
+const CodePlayground = lazy(() =>
+  import("@/components/sections/CodePlayground").then((m) => ({
+    default: m.CodePlayground,
+  })),
+);
+const GitHubActivity = lazy(() =>
+  import("@/components/sections/GitHubActivity").then((m) => ({
+    default: m.GitHubActivity,
+  })),
+);
 const Projects = lazy(() =>
   import("@/components/sections/Projects").then((m) => ({ default: m.Projects })),
 );
@@ -24,13 +34,18 @@ const Experience = lazy(() =>
 const Services = lazy(() =>
   import("@/components/sections/Services").then((m) => ({ default: m.Services })),
 );
-const Process = lazy(() =>
-  import("@/components/sections/Process").then((m) => ({ default: m.Process })),
+const ProjectShipping = lazy(() =>
+  import("@/components/sections/ProjectShipping").then((m) => ({
+    default: m.ProjectShipping,
+  })),
 );
 const Certifications = lazy(() =>
   import("@/components/sections/Certifications").then((m) => ({
     default: m.Certifications,
   })),
+);
+const Faq = lazy(() =>
+  import("@/components/sections/Faq").then((m) => ({ default: m.Faq })),
 );
 const Contact = lazy(() =>
   import("@/components/sections/Contact").then((m) => ({ default: m.Contact })),
@@ -55,14 +70,14 @@ const App = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Muhammad Aqib Aziz — Frontend Developer | React & TypeScript</title>
+        <title>Muhammad Aqib Aziz — Frontend Developer | React & JavaScript</title>
         <meta
           name="description"
-          content="Muhammad Aqib Aziz — Premium frontend developer specializing in React, TypeScript, Tailwind CSS, and modern UI/UX. Available for remote work."
+          content="Muhammad Aqib Aziz — Premium frontend developer specializing in React, JavaScript, Tailwind CSS, and modern UI/UX. Available for remote work."
         />
         <meta
           name="keywords"
-          content="Muhammad Aqib Aziz, frontend developer portfolio, React developer, TypeScript, Tailwind CSS, remote frontend developer"
+          content="Muhammad Aqib Aziz, frontend developer portfolio, React developer, JavaScript, Tailwind CSS, remote frontend developer"
         />
         <meta name="theme-color" content="#050816" />
         <meta property="og:title" content="Muhammad Aqib Aziz — Frontend Developer" />
@@ -94,11 +109,14 @@ const App = () => {
           <Suspense fallback={<SectionFallback />}>
             <About />
             <Skills />
+            <CodePlayground />
+            <GitHubActivity />
             <Projects />
             <Experience />
             <Services />
-            <Process />
+            <ProjectShipping />
             <Certifications />
+            <Faq />
             <Contact />
           </Suspense>
         </main>

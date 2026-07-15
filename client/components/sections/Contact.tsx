@@ -1,6 +1,6 @@
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { useState, useRef } from "react";
-import { CheckCircle, Loader2 } from "lucide-react";
+import { CheckCircle, Download, Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
@@ -100,6 +100,27 @@ export function Contact() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="flex flex-col items-center text-center gap-5 mb-16"
+        >
+          <p className="text-xl md:text-2xl font-heading font-semibold text-white">
+            Want the full picture?
+          </p>
+          <a
+            href="/resume.pdf"
+            download
+            data-cursor="hover"
+            className="inline-flex items-center justify-center gap-2 btn-primary"
+          >
+            <Download className="w-5 h-5" />
+            Download Resume
+          </a>
+        </motion.div>
+
+        <motion.div
           ref={containerRef}
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
@@ -108,7 +129,7 @@ export function Contact() {
         >
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="h-0.5 w-12 bg-gradient-main" />
-            <span className="text-primary text-sm font-bold tracking-widest uppercase">
+            <span className="text-primary text-sm font-mono font-bold tracking-widest uppercase">
               Get In Touch
             </span>
             <div className="h-0.5 w-12 bg-gradient-main" />
@@ -130,7 +151,7 @@ export function Contact() {
           <motion.div
             animate={shake ? { x: [0, -6, 6, -6, 0] } : { x: 0 }}
             transition={{ duration: 0.35 }}
-            className="w-full max-w-[600px] glass-card rounded-xl p-8 md:p-10"
+            className="w-full max-w-[600px] glass-card rounded-xl p-5 sm:p-8 md:p-10"
           >
             <AnimatePresence mode="wait">
               {isSuccess ? (

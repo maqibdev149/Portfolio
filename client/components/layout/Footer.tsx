@@ -17,7 +17,7 @@ const footerLinks = {
   ],
   moreLinks: [
     { name: "Services", href: "#services" },
-    { name: "Process", href: "#process" },
+    { name: "Process", href: "#project-shipping" },
     { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
     { name: "Resume", href: personalInfo.resumeUrl },
@@ -68,8 +68,8 @@ export function Footer() {
   return (
     <footer className="border-t border-white/10 pt-16 pb-8 bg-background-secondary/30">
       {/* Top Footer Grid */}
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-12">
           {/* Brand Column */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,7 @@ export function Footer() {
                 handleNavClick("#home");
               }}
               data-cursor="hover"
-              className="inline-block mb-3 group"
+              className="inline-flex min-w-11 min-h-11 items-center justify-center mb-3 group"
               aria-label="Home"
             >
               <img
@@ -113,7 +113,7 @@ export function Footer() {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className="text-text-secondary hover:text-primary transition-colors text-sm"
+                    className="flex min-h-11 lg:min-h-0 items-center text-text-secondary hover:text-primary transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -143,7 +143,7 @@ export function Footer() {
                     {...(link.href.endsWith(".pdf")
                       ? { download: true }
                       : {})}
-                    className="text-text-secondary hover:text-primary transition-colors text-sm"
+                    className="flex min-h-11 lg:min-h-0 items-center text-text-secondary hover:text-primary transition-colors text-sm"
                   >
                     {link.name}
                   </a>

@@ -16,7 +16,6 @@ export const technologies: Skill[] = [
   { name: "HTML5", icon: "SiHtml5", category: "frontend" },
   { name: "CSS", icon: "SiCss", category: "frontend" },
   { name: "JavaScript", icon: "SiJavascript", category: "frontend" },
-  { name: "TypeScript", icon: "SiTypescript", category: "frontend" },
   { name: "React", icon: "SiReact", category: "frontend" },
   { name: "Next.js", icon: "SiNextdotjs", category: "frontend" },
   { name: "Tailwind CSS", icon: "SiTailwindcss", category: "frontend" },

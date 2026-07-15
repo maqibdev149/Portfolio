@@ -57,7 +57,7 @@ export const services: ServiceItem[] = [
   {
     id: "bug-fixing",
     title: "Bug Fixing",
-    description: "Identify and fix bugs with a quality-first, QA-driven approach",
+    description: "Identify and fix frontend bugs with a precise, performance-focused approach",
     icon: Bug,
   },
   {

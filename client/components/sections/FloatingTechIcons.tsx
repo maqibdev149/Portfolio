@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { SiReact, SiTypescript, SiVite, SiTailwindcss } from "react-icons/si";
+import { SiReact, SiVite, SiTailwindcss } from "react-icons/si";
 
 const techIcons = [
   { Icon: SiReact, label: "React", color: "#61DAFB" },
-  { Icon: SiTypescript, label: "TypeScript", color: "#3178C6" },
   { Icon: SiVite, label: "Vite", color: "#A855F7" },
   { Icon: SiTailwindcss, label: "Tailwind", color: "#06B6D4" },
 ];

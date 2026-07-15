@@ -29,6 +29,7 @@ export default {
       fontFamily: {
         heading: ['"Space Grotesk"', "sans-serif"],
         body: ['"Inter"', "sans-serif"],
+        mono: ['"Fira Code"', "monospace"],
       },
       borderRadius: {
         btn: "12px",

@@ -16,7 +16,6 @@ const iconColorMap: Record<string, string> = {
   SiHtml5: "#E34C26",
   SiCss3: "#1572B6",
   SiJavascript: "#F7DF1E",
-  SiTypescript: "#3178C6",
   SiReact: "#61DAFB",
   SiNextdotjs: "#FFFFFF",
   SiTailwindcss: "#06B6D4",

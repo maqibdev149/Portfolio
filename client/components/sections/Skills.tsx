@@ -34,7 +34,7 @@ export function Skills() {
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-0.5 w-12 bg-primary" />
-            <span className="text-primary text-sm font-bold tracking-widest uppercase">
+            <span className="text-primary text-sm font-mono font-bold tracking-widest uppercase">
               My Expertise
             </span>
             <div className="h-0.5 w-12 bg-primary" />
@@ -57,7 +57,7 @@ export function Skills() {
               type="button"
               onClick={() => setActiveTab(category.id)}
               className={cn(
-                "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ease-out",
+                "min-h-11 px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ease-out",
                 activeTab === category.id
                   ? "bg-gradient-main text-white shadow-glow-brand"
                   : "glass text-text-secondary hover:text-white",
@@ -75,7 +75,7 @@ export function Skills() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -16 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
-            className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8"
+            className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-6 md:gap-8"
           >
             {filteredSkills.map((tech, index) => (
               <SkillIcon

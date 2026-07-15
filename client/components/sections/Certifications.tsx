@@ -30,7 +30,7 @@ export function Certifications() {
           {/* Eyebrow */}
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-0.5 w-12 bg-gradient-main" />
-            <span className="text-primary text-sm font-bold tracking-widest">
+            <span className="text-primary text-sm font-mono font-bold tracking-widest">
               CREDENTIALS
             </span>
             <div className="h-0.5 w-12 bg-gradient-main" />
@@ -43,7 +43,7 @@ export function Certifications() {
 
           {/* Subtext */}
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            Continuous learning in frontend engineering and quality assurance practices
+            Continuous learning in frontend engineering and modern web development
           </p>
         </motion.div>
 

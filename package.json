@@ -19,6 +19,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@fontsource/fira-code": "^5.2.7",
     "@fontsource/inter": "^5.0.20",
     "@fontsource/space-grotesk": "^5.0.20",
     "@hookform/resolvers": "^5.2.1",

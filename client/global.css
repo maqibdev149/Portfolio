@@ -4,6 +4,9 @@
 @import "@fontsource/inter/400.css";
 @import "@fontsource/inter/500.css";
 @import "@fontsource/inter/600.css";
+@import "@fontsource/fira-code/400.css";
+@import "@fontsource/fira-code/500.css";
+@import "@fontsource/fira-code/600.css";
 
 @tailwind base;
 @tailwind components;
@@ -131,6 +134,10 @@
     filter: blur(40px);
     animation: hero-blob-pulse 8s ease-in-out infinite reverse;
   }
+
+  .typing-cursor {
+    animation: typing-cursor-blink 0.7s steps(1, end) infinite;
+  }
 }
 
 @keyframes hero-blob-pulse {
@@ -142,6 +149,17 @@
   50% {
     opacity: 0.5;
     transform: scale(1.08);
+  }
+}
+
+@keyframes typing-cursor-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
   }
 }
 

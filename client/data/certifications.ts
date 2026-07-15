@@ -18,7 +18,7 @@ export const certifications: Certification[] = [
   },
   {
     id: "cert-2",
-    title: "TypeScript Professional",
+    title: "JavaScript (ES6+) Certification",
     issuer: "Placeholder Issuer",
     date: "2024",
     credentialUrl: "https://example.com",

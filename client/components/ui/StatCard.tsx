@@ -39,9 +39,9 @@ export function StatCard({ label, value }: StatCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       whileHover={{ y: -6, borderColor: "rgba(59, 130, 246, 0.4)" }}
-      className="glass rounded-2xl p-6 border border-white/10 transition-colors duration-300"
+      className="glass rounded-2xl p-4 sm:p-6 border border-white/10 transition-colors duration-300"
     >
-      <div className="text-3xl md:text-4xl font-bold text-primary">
+      <div className="text-3xl md:text-4xl font-mono font-bold text-primary">
         {displayValue}+
       </div>
       <p className="text-text-secondary text-sm mt-2">{label}</p>

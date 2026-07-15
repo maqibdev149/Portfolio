@@ -112,7 +112,7 @@ export function About() {
               transition={{ delay: 0.4, duration: 0.6, type: "spring" }}
               className="absolute -bottom-4 -right-2 md:-right-4 glass rounded-2xl px-4 py-3 border border-white/10 shadow-glow-blue"
             >
-              <p className="text-sm font-semibold text-white">3+ Years</p>
+              <p className="text-sm font-mono font-semibold text-white">3+ Years</p>
               <p className="text-xs text-text-secondary">Experience</p>
             </motion.div>
           </motion.div>
@@ -127,7 +127,7 @@ export function About() {
           >
             {/* Eyebrow */}
             <motion.div variants={itemVariants} className="flex items-center gap-3">
-              <span className="text-primary text-sm font-bold tracking-widest uppercase">About Me</span>
+              <span className="text-primary text-sm font-mono font-bold tracking-widest uppercase">About Me</span>
               <div className="h-0.5 w-12 bg-primary" />
             </motion.div>
 
@@ -142,7 +142,7 @@ export function About() {
             {/* Bio */}
             <motion.div variants={itemVariants} className="space-y-4">
               <p className="text-text-secondary leading-relaxed">
-                I started my career in frontend development with a strong foundation in software quality assurance. This unique background gives me an eye for detail and a passion for building pixel-perfect interfaces that users love.
+                I started my career in frontend development with a passion for turning ideas into intuitive digital experiences. Building polished interfaces has sharpened my eye for detail and strengthened my commitment to creating products users love.
               </p>
               <p className="text-text-secondary leading-relaxed">
                 Over the past few years, I've transitioned into building production React applications for real client businesses, from e-commerce platforms to corporate websites. I thrive on clean code, performance optimization, and creating premium user experiences.
@@ -155,7 +155,7 @@ export function About() {
             {/* Stats */}
             <motion.div
               variants={itemVariants}
-              className="grid grid-cols-3 gap-4"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-4"
             >
               {stats.map((stat) => (
                 <StatCard key={stat.label} label={stat.label} value={stat.value} />

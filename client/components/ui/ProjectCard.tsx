@@ -31,7 +31,7 @@ export function ProjectCard({ project, index, isEven }: ProjectCardProps) {
           initial={{ x: isEven ? 40 : -40, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { x: isEven ? 40 : -40, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className={`relative order-last lg:order-none ${isEven ? "lg:order-last" : "lg:order-first"}`}
+          className={`relative order-first ${isEven ? "lg:order-last" : "lg:order-first"}`}
         >
           {/* Browser Chrome Frame */}
           <div className="glass rounded-3xl border border-white/10 overflow-hidden p-3 hover:border-primary/30 transition-all duration-300 hover:shadow-glow-blue">
@@ -72,7 +72,7 @@ export function ProjectCard({ project, index, isEven }: ProjectCardProps) {
           initial={{ x: isEven ? -40 : 40, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { x: isEven ? -40 : 40, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className={`relative z-10 ${isEven ? "lg:order-first" : "lg:order-last"}`}
+          className={`relative z-10 order-last ${isEven ? "lg:order-first" : "lg:order-last"}`}
         >
           {/* Index Number Background */}
           <div className="absolute -top-8 -left-2 text-7xl font-bold text-white/5 font-heading pointer-events-none">
@@ -115,7 +115,7 @@ export function ProjectCard({ project, index, isEven }: ProjectCardProps) {
           <AnimatePresence>
             <motion.button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="flex items-center gap-2 text-primary hover:text-accent transition-colors mb-6"
+              className="flex min-h-11 items-center gap-2 text-primary hover:text-accent transition-colors mb-6"
             >
               <span className="text-sm font-semibold">
                 {isExpanded ? "Hide Details" : "View Details"}

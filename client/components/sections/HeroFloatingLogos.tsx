@@ -26,7 +26,7 @@ const floatingLogos = [
 export function HeroFloatingLogos() {
   return (
     <div
-      className="absolute inset-0 pointer-events-none hidden sm:block z-[2]"
+      className="absolute inset-0 pointer-events-none hidden lg:block z-[2]"
       aria-hidden
     >
       {/* Covers baked TRT tile in the background image */}

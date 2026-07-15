@@ -30,14 +30,14 @@ export function Experience() {
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-0.5 w-12 bg-gradient-main" />
-            <span className="text-primary text-sm font-bold tracking-widest">CAREER JOURNEY</span>
+            <span className="text-primary text-sm font-mono font-bold tracking-widest">CAREER JOURNEY</span>
             <div className="h-0.5 w-12 bg-gradient-main" />
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6 leading-tight">
             Experience
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            Growing from QA and development roots into a full-fledged frontend engineer focused on quality and precision
+            Growing through real-world projects into a frontend engineer focused on performance, precision, and polished user interfaces
           </p>
         </motion.div>
 

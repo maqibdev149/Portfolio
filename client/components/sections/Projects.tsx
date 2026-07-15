@@ -27,7 +27,7 @@ export function Projects() {
           {/* Eyebrow */}
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-0.5 w-12 bg-gradient-main" />
-            <span className="text-primary text-sm font-bold tracking-widest">PORTFOLIO</span>
+            <span className="text-primary text-sm font-mono font-bold tracking-widest">PORTFOLIO</span>
             <div className="h-0.5 w-12 bg-gradient-main" />
           </div>
 

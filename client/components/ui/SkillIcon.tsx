@@ -15,7 +15,6 @@ const iconComponents: Record<string, ComponentType<{ className?: string }>> = {
   SiHtml5: SiIcons.SiHtml5,
   SiCss: SiIcons.SiCss,
   SiJavascript: SiIcons.SiJavascript,
-  SiTypescript: SiIcons.SiTypescript,
   SiReact: SiIcons.SiReact,
   SiNextdotjs: SiIcons.SiNextdotjs,
   SiTailwindcss: SiIcons.SiTailwindcss,
@@ -38,7 +37,6 @@ const iconColorMap: Record<string, string> = {
   SiHtml5: "#E34C26",
   SiCss: "#1572B6",
   SiJavascript: "#F7DF1E",
-  SiTypescript: "#3178C6",
   SiReact: "#61DAFB",
   SiNextdotjs: "#FFFFFF",
   SiTailwindcss: "#06B6D4",
@@ -69,14 +67,14 @@ export function SkillIcon({ name, icon, index }: SkillIconProps) {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
       transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
       whileHover={{ scale: 1.1 }}
-      className="group glass-card flex flex-col items-center justify-center gap-3 p-6 transition-all duration-300 ease-out hover:shadow-glow-blue hover:border-primary/30"
+      className="group glass-card flex flex-col items-center justify-center gap-3 p-4 sm:p-6 transition-all duration-300 ease-out hover:shadow-glow-blue hover:border-primary/30"
     >
       <div style={{ color: iconColorMap[icon] || "#B0B8C4" }}>
         {IconComponent ? (
           <IconComponent className="w-10 h-10 md:w-12 md:h-12" />
         ) : null}
       </div>
-      <span className="text-xs md:text-sm text-text-secondary font-medium text-center">
+      <span className="text-sm text-text-secondary font-medium text-center break-words">
         {name}
       </span>
     </motion.div>
